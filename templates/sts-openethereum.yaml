@@ -38,7 +38,7 @@ spec:
             - name: data
               mountPath: {{ .datadir }}
           ports:
-            - name: jsonrpc
+            - name: rpc
               containerPort: {{ .ports.rpc }}
               protocol: TCP
             - name: metrics
